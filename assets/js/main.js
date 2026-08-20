@@ -179,7 +179,7 @@ function imgFolder(key){
   return { quad:'quad', camel:'camel', pool:'pool', fire:'dinner-fire' }[key];
 }
 function heroExt(key){
-  return { quad:'webp', camel:'webp', pool:'jpg', fire:'jpeg' }[key];
+  return { quad:'webp', camel:'webp', pool:'jpg', fire:'jpg' }[key];
 }
 
 /* ============================================================
