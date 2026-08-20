@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reserve Your Experience — The Golden Sun Travel, Agafay Desert</title>
+<meta name="description" content="Reserve your Agafay Desert experience with The Golden Sun Travel — book online or send your request straight to WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<script>window.SITE_ROOT = "";</script>
+<div id="svg-sprite-placeholder"></div>
+<div id="nav-placeholder"></div>
+<div id="mobile-sticky-placeholder"></div>
+
+<section class="page-hero">
+  <div class="container">
+    <p class="eyebrow">Let's lock it in</p>
+    <h1>Reserve Your <em style="color:var(--gold-bright); font-style:normal;">Experience</em></h1>
+    <p class="section-lead">Fill in your details below, or skip the form entirely and book directly on WhatsApp.</p>
+  </div>
+</section>
+
+<section class="section-pad bg-brown">
+  <div class="container">
+    <div class="booking-grid reveal">
+      <form class="form-card" id="bookingForm">
+
+        <div class="form-group-title">Personal Information</div>
+        <div class="form-row">
+          <div class="field"><label for="fullName">Full name</label><input id="fullName" name="fullName" type="text" required></div>
+          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required></div>
+        </div>
+        <div class="field"><label for="phone">WhatsApp / phone</label><input id="phone" name="phone" type="tel" required></div>
+
+        <div class="form-group-title">Booking</div>
+        <div class="form-row">
+          <div class="field"><label for="date">Date</label><input id="date" name="date" type="date" required></div>
+          <div class="field"><label for="guests">Number of guests</label><input id="guests" name="guests" type="number" min="1" value="2" required></div>
+        </div>
+        <div class="field">
+          <label>Selected experience(s)</label>
+          <div class="checkbox-group" id="bookingCheckboxes">
+            <label class="checkbox-row"><input type="checkbox" name="exp" value="Quad Adventure"> Quad Adventure</label>
+            <label class="checkbox-row"><input type="checkbox" name="exp" value="Camel Ride"> Camel Ride</label>
+            <label class="checkbox-row"><input type="checkbox" name="exp" value="Day Pool with Lunch or Dinner"> Day Pool with Lunch or Dinner</label>
+            <label class="checkbox-row"><input type="checkbox" name="exp" value="Moroccan Dinner, Traditional Music & Fire Show"> Moroccan Dinner, Traditional Music &amp; Fire Show</label>
+            <label class="checkbox-row"><input type="checkbox" name="exp" value="The Golden Sun Experience (Complete Package)"> The Golden Sun Experience (Complete Package)</label>
+          </div>
+        </div>
+        <div class="field"><label for="time">Preferred time</label><input id="time" name="time" type="time"></div>
+        <div class="field"><label for="mealPref">Lunch or dinner? (only applies to Day Pool)</label>
+          <select id="mealPref" name="mealPref">
+            <option value="">Not applicable</option>
+            <option value="Lunch">Lunch</option>
+            <option value="Dinner">Dinner</option>
+          </select>
+        </div>
+
+        <div class="form-group-title">Pickup</div>
+        <div class="form-row">
+          <div class="field"><label for="hotel">Hotel / Riad name</label><input id="hotel" name="hotel" type="text"></div>
+          <div class="field"><label for="pickupLoc">Pickup location</label><input id="pickupLoc" name="pickupLoc" type="text"></div>
+        </div>
+        <div class="field"><label for="address">Address (optional)</label><input id="address" name="address" type="text"></div>
+
+        <div class="form-group-title">Additional Information</div>
+        <div class="field"><label for="requests">Special requests, dietary needs, or questions</label><textarea id="requests" name="requests"></textarea></div>
+
+        <button type="submit" class="btn btn-gold btn-block">Confirm Reservation</button>
+        <div class="confirm-banner" id="confirmBanner">Thanks — your request is ready. In a live site this submits to your booking system or inbox; for now, tap "Send via WhatsApp" in the summary to send it directly.</div>
+        <p class="form-note">Prefer messaging? Every field here can also just be sent straight to WhatsApp — see the summary panel.</p>
+      </form>
+
+      <aside class="summary-card">
+        <h4>Your Experience</h4>
+        <div id="summaryExpList">
+          <div class="summary-row empty">No experience selected yet</div>
+        </div>
+        <div class="summary-meta">
+          <div class="summary-row"><span>Guests</span><span id="summaryGuests">2</span></div>
+          <div class="summary-row"><span>Date</span><span id="summaryDate">—</span></div>
+        </div>
+        <a href="#" class="btn btn-whatsapp btn-block" id="waBookLink" style="margin-top:14px;">
+          <svg width="16" height="16" viewBox="0 0 24 24"><use href="#ico-whatsapp"/></svg> Send via WhatsApp
+        </a>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+
+<script src="site.config.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
